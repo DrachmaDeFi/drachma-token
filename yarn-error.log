@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/viraj/.local/bin:/home/viraj/.solc-select:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/viraj/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/viraj/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/viraj/.local/bin:/home/viraj/.local/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /mnt/c/repo/drachma-token/package.json: Unexpected token } in JSON at position 185
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "drachma-token",
+    "version": "1.0.0",
+    "description": "Drachma Token",
+    "scripts": {
+      "build": "hardhat clean && hardhat compile",
+      "compile": "hardhat compile",
+    },
+    "author": "DRACHMA Protocol",
+    "license": "MIT",
+    "dependencies": {
+      "hardhat": "^2.8.3",
+      "@openzeppelin/contracts": "^4.4.2",
+      "@nomiclabs/hardhat-ethers": "^2.0.0",
+      "@nomiclabs/hardhat-etherscan": "^2.1.7",
+      "@nomiclabs/hardhat-waffle": "^2.0.0",
+      "dotenv": "^10.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
